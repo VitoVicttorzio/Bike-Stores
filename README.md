@@ -77,5 +77,5 @@ As soon as the product is sold the record add to the table orders and order_item
 
 Retrieving data from MySQL database and performing data visualization with Power Bi Desktop. Dashboard contains of different slicers such as date, brand, category, store, state and city. You may also choose to consider total sales, total quantity, total orders and total stocks. Dashboard includes donut chart about brand, horizontal bar chart about category, bar chart about store, treemap cgart about best 10 products and best 10 cities, and line chart from 2021 to 2023. Bike Stores database Dashboard for quick view:
 
-<img src = "dashboard.png" width="1000" height="800">
+<img src = "dashboard.png" width="1000" height="600">
 
