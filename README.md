@@ -28,9 +28,9 @@ The stores table includes the store’s information. Each store has a unique `st
 The table has 3 stores: Santa Cruz Bikes is located in the state of California, Baldwin Bikes is located in the state of New York City, Rowlett Bikes is located in the state of Texas.   
 1) Staffs table  
 The staffs table stores the essential information of staffs including `staff_id` (unique identifier for each customer), `first_name`, `last_name`. It also contains the communication information such as `phone` and `email`. A staff works at a store specified by the value in the `store_id` column. A store can have one or more staffs. A staff reports to a store manager specified by the value in the `manager_id` column. If the value in the `manager_id` is null, then the staff is the top manager. The table has 3 sellers in each store and 1 top manager.  
-1) Orders table 
+1) Orders table   
 The orders table stores information including `order_id` (unique identifier for each order) `customer_id`, `order_status`, `order_date`, `required_date`, `shipped_date`. Order status consists of states: 1 – Pending, 2 – Processing, 3 – Rejected, 4 – Completed. It also stores the information on where the sales transaction was created (`store_id`) and who created it (`staff_id`).  
-1) Order_items table
+1) Order_items table  
 The order_items table stores the line items of a sales order. Each line item belongs to a sales order specified by the `order_id` column. A sales `item_id` includes `product_id`, `quantity`, `list_price`, and `discount`.  
 1) Categories table  
 The categories table has 9 categories: children’s bicycles, comfort bicycles, cruises bicycles, cyclocross bicycles, electric bikes, mountain bikes and road bikes. Each category has a unique ID in `category_id` column.  
@@ -38,7 +38,7 @@ The categories table has 9 categories: children’s bicycles, comfort bicycles, 
 The brands table stores information of 9 bikes brands: Electra, Haro, Heller, Pure Cycles, Ritchey, Strider, Sun Bicycles, Surly, Trek. Each brand has a unique ID in `brand_id`d column.  
 1) Products table  
 The products table stores the product’s information such as `product_name`, `brand_id`, `category_id`, `model_year`, and `list_price`. Each product has a unique ID.  Each product belongs to a brand specified by the `brand_id` column. A brand may have zero or many products. Each product also belongs to a category specified by the `category_id` column. Also, each category may have zero or many products. In total, sold 321 products were sold.
-1) Stocks table
+1) Stocks table  
 The stocks table stores the inventory information, i.e., the `quantity`of a particular `product_id`in a specific `store_id`.
 
 ## Analyses using MySQL
